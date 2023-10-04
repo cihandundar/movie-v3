@@ -1,0 +1,57 @@
+.header {
+  padding: 20px 0;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
+    @include breakpoint(lg) {
+      max-width: 900px;
+    }
+    @include breakpoint(md) {
+      max-width: 700px;
+    }
+  }
+}
+
+.logo {
+  > a {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    margin-right: 15px;
+    max-width: 100px;
+    border-radius: 50%;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  @include breakpoint(l) {
+    margin-top: 10px;
+  }
+}
+
+li {
+  > a {
+    font-weight: bold;
+  }
+}
+
+.link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.btn {
+  padding: 8px 30px;
+  cursor: pointer;
+  background-color: orange;
+  border-radius: 8px;
+  font-weight: bold;
+}
