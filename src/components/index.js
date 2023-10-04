@@ -1,3 +1,3 @@
 import Header from "./Header";
-
-export { Header };
+import Slider from "./Slider";
+export { Header, Slider };
