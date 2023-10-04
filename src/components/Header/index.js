@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaSignInAlt, FaUser } from "react-icons/fa";
-import { AiOutlineHome, AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
+import { PiTelevisionSimpleBold } from "react-icons/pi";
 import { useDispatch, useSelector } from "react-redux";
 import { logout, reset } from "../../features/auth/authSlice";
 
@@ -32,7 +33,7 @@ const Header = () => {
                 <AiOutlineHome /> <Link to="/">Home</Link>
               </li>
               <li className="link">
-                <AiOutlineShoppingCart /> <Link to="cart">Cart</Link>
+                <PiTelevisionSimpleBold /> <Link to="movie">Movies</Link>
               </li>
               <li className="link">
                 <button onClick={onLogout} className="btn">
