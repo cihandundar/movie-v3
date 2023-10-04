@@ -1,0 +1,15 @@
+.slider {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include breakpoint(lg) {
+      max-width: 900px;
+    }
+    @include breakpoint(md) {
+      max-width: 700px;
+    }
+    @include breakpoint(sm) {
+      max-width: 400px;
+    }
+  }
+}
