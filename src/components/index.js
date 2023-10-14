@@ -1,3 +1,4 @@
 import Header from "./Header";
 import Slider from "./Slider";
-export { Header, Slider };
+import MovieItem from "./MovieItem";
+export { Header, Slider, MovieItem };
