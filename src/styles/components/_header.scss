@@ -54,4 +54,7 @@ li {
   background-color: purple;
   color: #fff;
   font-weight: bold;
+  @include breakpoint(sm) {
+    padding: 5px 20px;
+  }
 }

@@ -16,6 +16,9 @@
     @include breakpoint(md) {
       justify-content: center;
     }
+    @include breakpoint(sm) {
+      max-width: 400px;
+    }
   }
   &__card {
     margin: 15px 0;
