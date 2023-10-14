@@ -11,43 +11,35 @@ import Photo7 from "../../assets/images/photo7.jpg";
 import Photo8 from "../../assets/images/photo8.jpg";
 import Photo9 from "../../assets/images/photo9.jpg";
 const Slider = () => {
+  const photoPaths = [
+    Photo1,
+    Photo2,
+    Photo3,
+    Photo4,
+    Photo5,
+    Photo6,
+    Photo7,
+    Photo8,
+    Photo9,
+  ];
   return (
     <div className="slider">
       <div className="slider__container">
         <Swiper
           spaceBetween={10}
-          slidesPerView={2}
+          slidesPerView={3}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           autoplay
         >
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo1} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo2} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo3} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo4} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo5} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo6} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo7} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo8} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img style={{ width: "100%" }} src={Photo9} alt="" />
-          </SwiperSlide>
+          {photoPaths.map((photo, index) => (
+            <SwiperSlide key={index}>
+              <img style={{ width: "100%" }} src={photo} alt="" />
+              <div className="slider__btn">
+                <button>Watch Now</button>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
