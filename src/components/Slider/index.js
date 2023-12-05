@@ -32,7 +32,7 @@ const Slider = () => {
           onSwiper={(swiper) => console.log(swiper)}
           autoplay
         >
-          {photoPaths.map((photo, index) => (
+          {photoPaths?.map((photo, index) => (
             <SwiperSlide key={index}>
               <img style={{ width: "100%" }} src={photo} alt="" />
               <div className="slider__btn">
