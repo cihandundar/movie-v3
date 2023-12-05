@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-
+import { useSelector } from "react-redux";
 const MovieItem = () => {
+  const isLoading = useSelector((state) => state?.movies?.isLoading);
+
   const movieItems = [
     {
       id: 1,
@@ -64,22 +66,31 @@ const MovieItem = () => {
 
   return (
     <div className="movieitem">
-      <h1>Trend Movies</h1>
-      <div className="movieitem__filter">
-        {getAllCategories().map((category) => (
-          <button key={category} onClick={() => setSelectedCategory(category)}>
-            {category}
-          </button>
-        ))}
-      </div>
-      <div className="movieitem__container">
-        {filteredMovies.map((item) => (
-          <div className="movieitem__card" key={item.id}>
-            <img src={item.img} alt={item.title} />
-            <h3>{item.title}</h3>
+      {isLoading ? (
+        <p className="loading">Loading...</p>
+      ) : (
+        <div style={{ textAlign: "center" }}>
+          <h1>Trend Movies</h1>
+          <div className="movieitem__filter">
+            {getAllCategories().map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
           </div>
-        ))}
-      </div>
+          <div className="movieitem__container">
+            {filteredMovies.map((item) => (
+              <div className="movieitem__card" key={item.id}>
+                <img src={item.img} alt={item.title} />
+                <h3>{item.title}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
