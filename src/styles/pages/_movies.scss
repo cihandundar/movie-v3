@@ -2,11 +2,18 @@
   &__title {
     text-align: center;
     padding-bottom: 20px;
+    @include breakpoint(sm) {
+      padding-bottom: 5px;
+    }
     h1 {
       font-size: 3rem;
       padding-bottom: 20px;
       font-weight: 400;
       text-transform: uppercase;
+      @include breakpoint(sm) {
+        font-size: 1.5rem;
+        padding-bottom: 0;
+      }
     }
   }
   &__input {

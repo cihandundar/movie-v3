@@ -1,8 +1,6 @@
 .details {
   padding: 60px 0;
-  @include breakpoint(sm) {
-    margin-top: 80px;
-  }
+
   &__container {
     max-width: 1200px;
     margin: 0 auto;

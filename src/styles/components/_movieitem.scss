@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include breakpoint(sm) {
+      flex-wrap: wrap;
+    }
     > button {
       padding: 8px 20px;
       background-color: purple;
@@ -15,6 +18,9 @@
       cursor: pointer;
       &:not(:last-child) {
         margin-right: 10px;
+        @include breakpoint(sm) {
+          margin-right: 0;
+        }
       }
     }
   }
