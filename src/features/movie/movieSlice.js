@@ -10,7 +10,7 @@ const initialState = {
 
 export const fetchMovies = createAsyncThunk("fetchMovies", async () => {
   const response = await axios.get(
-    "https://api.themoviedb.org/3/movie/popular?api_key=ccb0a8566b23ab43471cda53fed3d9e7&language=en-US&page"
+    "https://api.themoviedb.org/3/movie/popular?api_key=ccb0a8566b23ab43471cda53fed3d9e7&language=en-US&page/1"
   );
   console.log(response.data.results);
   return response.data.results;

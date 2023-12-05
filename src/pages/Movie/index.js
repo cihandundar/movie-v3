@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { fetchMovies } from "../../redux/movieSlice";
+import { fetchMovies } from "../../features/movie/movieSlice";
 
 const Movie = () => {
   const movies = useSelector((state) => state?.movies?.data);
@@ -18,7 +18,7 @@ const Movie = () => {
     <div className="movie">
       <div className="movie__title">
         <div className="movie__title__container">
-          <h1>Movies</h1>
+          <h1> Populer Movies</h1>
         </div>
       </div>
       <div className="movie__container">
