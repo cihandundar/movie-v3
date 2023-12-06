@@ -1,5 +1,5 @@
 import { Header } from "components";
-import { Home, Login, Movie, MovieDetails, Register } from "pages";
+import { Favorites, Home, Login, Movie, MovieDetails, Register } from "pages";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/movie" element={<Movie />} />
+        <Route path="/favorites" element={<Favorites />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
       </Routes>
     </BrowserRouter>

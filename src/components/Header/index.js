@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaSignInAlt, FaUser } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
 import { PiTelevisionSimpleBold } from "react-icons/pi";
+import { MdFavoriteBorder } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { logout, reset } from "../../features/auth/authSlice";
 
@@ -34,6 +35,9 @@ const Header = () => {
               </li>
               <li className="link">
                 <PiTelevisionSimpleBold /> <Link to="movie">Movies</Link>
+              </li>
+              <li className="link">
+                <MdFavoriteBorder /> <Link to="favorites">Favorites</Link>
               </li>
               <li className="link">
                 <button onClick={onLogout} className="btn">
