@@ -36,6 +36,9 @@ ul {
   @include breakpoint(l) {
     margin-top: 10px;
   }
+  @include breakpoint(xs) {
+    flex-direction: column;
+  }
 }
 
 li {
@@ -46,8 +49,15 @@ li {
 
 .link:not(:last-child) {
   margin-right: 30px;
+  @include breakpoint(xs) {
+    margin-right: 0;
+  }
 }
-
+.link {
+  @include breakpoint(xs) {
+    margin-top: 10px;
+  }
+}
 .btn {
   padding: 8px 30px;
   cursor: pointer;
