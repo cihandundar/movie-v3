@@ -30,6 +30,9 @@
       cursor: pointer;
       background-color: purple;
       color: #fff;
+      @include breakpoint(sm) {
+        width: 300px;
+      }
     }
   }
   &__container {
