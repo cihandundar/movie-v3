@@ -25,6 +25,9 @@ const Slider = () => {
   return (
     <div className="slider">
       <div className="slider__container">
+        <div className="slider__container__title">
+          <h2>Movies Trailer</h2>
+        </div>
         <Swiper
           spaceBetween={10}
           slidesPerView={3}
