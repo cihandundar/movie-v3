@@ -1,4 +1,4 @@
-import { MovieItem, Slider } from "components";
+import { Hero, MovieItem, Slider } from "components";
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -16,6 +16,7 @@ const Home = () => {
     <main className="main">
       <section className="section">
         <div className="section__content">
+          <Hero />
           <Slider />
           <MovieItem />
         </div>
