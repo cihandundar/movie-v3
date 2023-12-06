@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { fetchMovies, searchMovies } from "../../features/movie/movieSlice";
 import { addToFavorites, remove } from "features/movie/favoritesSlice";
 import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
+import { Footer } from "components";
 const Movie = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const movies = useSelector((state) => state.movies.data);
@@ -92,6 +93,7 @@ const Movie = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

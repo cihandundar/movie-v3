@@ -1,4 +1,4 @@
-import { Hero, MovieItem, Slider } from "components";
+import { Footer, Hero, MovieItem, Slider } from "components";
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -21,6 +21,7 @@ const Home = () => {
           <MovieItem />
         </div>
       </section>
+      <Footer />
     </main>
   );
 };

@@ -1,3 +1,4 @@
+import { Footer } from "components";
 import { remove } from "features/movie/favoritesSlice";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -34,6 +35,7 @@ const Favorites = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </section>
   );
 };
