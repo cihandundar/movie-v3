@@ -39,7 +39,7 @@ const Slider = () => {
             <SwiperSlide key={index}>
               <img style={{ width: "100%" }} src={photo} alt="" />
               <div className="slider__btn">
-                <button>Watch Movie</button>
+                <button>Watch Trailer</button>
               </div>
             </SwiperSlide>
           ))}

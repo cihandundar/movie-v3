@@ -16,20 +16,20 @@
       }
     }
   }
-  &__input {
-    @include breakpoint(sm) {
-      padding-inline: 65px;
-    }
+  &__search {
+    padding-bottom: 20px;
+    text-align: center;
     > input {
-      width: 400px;
+      width: 300px;
       height: 35px;
-      border-radius: 8px;
-      padding-inline: 10px;
-      border: none;
-      outline: none;
-      @include breakpoint(sm) {
-        width: 100%;
-      }
+      padding: 0 10px;
+    }
+    > button {
+      height: 35px;
+      padding: 0 20px;
+      cursor: pointer;
+      background-color: purple;
+      color: #fff;
     }
   }
   &__container {
