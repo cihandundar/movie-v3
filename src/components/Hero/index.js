@@ -31,7 +31,11 @@ const Hero = () => {
             </p>
           </div>
           <div className="hero__btn">
-            <button>Watch</button>
+            <button>
+              <a href="https://filmmax.org/recep-ivedik/" target="_blank">
+                Watch
+              </a>
+            </button>
           </div>
         </div>
       </div>

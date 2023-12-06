@@ -12,6 +12,7 @@
     &__background {
       > img {
         width: 100%;
+        border-radius: 8px;
       }
     }
     &__wrapper {
@@ -52,7 +53,9 @@
       cursor: pointer;
       font-size: 20px;
       background-color: purple;
-      color: #fff;
+      > a {
+        color: #fff;
+      }
       @include breakpoint(lg) {
         width: 150px;
         font-size: 1rem;

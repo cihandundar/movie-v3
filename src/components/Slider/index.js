@@ -37,7 +37,11 @@ const Slider = () => {
         >
           {photoPaths?.map((photo, index) => (
             <SwiperSlide key={index}>
-              <img style={{ width: "100%" }} src={photo} alt="" />
+              <img
+                style={{ width: "100%", borderRadius: "8px" }}
+                src={photo}
+                alt=""
+              />
               <div className="slider__btn">
                 <button>Watch Trailer</button>
               </div>
