@@ -3,6 +3,12 @@
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    @include breakpoint(lg) {
+      max-width: 900px;
+    }
+    @include breakpoint(md) {
+      max-width: 700px;
+    }
     &__background {
       > img {
         width: 100%;
@@ -11,8 +17,11 @@
     &__wrapper {
       position: absolute;
       left: 20px;
-      bottom: 100px;
+      bottom: 50px;
       width: 500px;
+      @include breakpoint(md) {
+        width: 100%;
+      }
     }
   }
   &__title {
@@ -30,6 +39,9 @@
   &__text {
     > p {
       color: #fff;
+      @include breakpoint(md) {
+        display: none;
+      }
     }
   }
   &__btn {
@@ -41,6 +53,16 @@
       font-size: 20px;
       background-color: purple;
       color: #fff;
+      @include breakpoint(lg) {
+        width: 150px;
+        font-size: 1rem;
+      }
+      @include breakpoint(xs) {
+        margin-top: 5px;
+        width: 100px;
+        height: 30px;
+        font-size: 0.7rem;
+      }
     }
   }
   &__rating {
