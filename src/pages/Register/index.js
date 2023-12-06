@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Logo from "../../assets/images/logo.jpg";
+// import Logo from "../../assets/images/logo.jpg";
+import Logo1 from "../../assets/images/logo1.jpg";
 import { reset, register } from "../../features/auth/authSlice";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -63,7 +64,7 @@ const Register = () => {
       ) : (
         <div className="register__container">
           <div className="left">
-            <img src={Logo} alt="" />
+            <img src={Logo1} alt="" />
           </div>
           <div className="right">
             <div>

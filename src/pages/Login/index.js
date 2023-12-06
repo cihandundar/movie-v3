@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Logo from "../../assets/images/logo.jpg";
+import Logo1 from "../../assets/images/logo1.jpg";
+// import Logo from "../../assets/images/logo.jpg";
 import { useNavigate } from "react-router-dom";
 import { login, reset } from "../../features/auth/authSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -57,7 +58,7 @@ const Login = () => {
       ) : (
         <div className="register__container">
           <div className="left">
-            <img src={Logo} alt="" />
+            <img src={Logo1} alt="" />
           </div>
           <div className="right">
             <div>

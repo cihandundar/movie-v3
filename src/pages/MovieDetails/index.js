@@ -14,6 +14,9 @@ const MovieDetails = () => {
   const IMG_API = "https://image.tmdb.org/t/p/w1280";
   return (
     <div className="details">
+      <div className="details__background">
+        <img src={IMG_API + details?.backdrop_path} alt="" />
+      </div>
       <div className="details__container">
         <div className="details__wrapper">
           <div className="details__img">
@@ -30,7 +33,7 @@ const MovieDetails = () => {
               <p>{details?.overview}</p>
             </div>
             <div className="details__col details__vote">
-              <p style={{ color: "#99682c" }}>
+              <p style={{ color: "#99682c", fontWeight: "bold" }}>
                 Rating: {details?.vote_average?.toFixed(1)}
               </p>
             </div>
