@@ -69,7 +69,7 @@ const MovieItem = () => {
       {isLoading ? (
         <p className="loading">Loading...</p>
       ) : (
-        <div style={{ textAlign: "center" }}>
+        <div>
           <h1>Trend Movies</h1>
           <div className="movieitem__filter">
             {getAllCategories().map((category) => (
