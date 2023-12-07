@@ -19,6 +19,11 @@
   cursor: pointer;
   user-select: none;
   display: flex;
+  > h2 {
+    @include breakpoint(xs) {
+      font-size: 1rem;
+    }
+  }
 }
 
 .accordion__title:hover {
