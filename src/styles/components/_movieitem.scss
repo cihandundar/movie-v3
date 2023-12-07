@@ -20,7 +20,8 @@
     }
     > button {
       padding: 8px 20px;
-      background-color: purple;
+      background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+
       color: #fff;
       cursor: pointer;
       &:not(:last-child) {

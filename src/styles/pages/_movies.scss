@@ -28,7 +28,8 @@
       height: 35px;
       padding: 0 20px;
       cursor: pointer;
-      background-color: purple;
+      background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+
       color: #fff;
       @include breakpoint(sm) {
         width: 300px;

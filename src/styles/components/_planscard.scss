@@ -1,0 +1,41 @@
+.card {
+  margin-top: 50px;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__title {
+      > h1 {
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        @include breakpoint(sm) {
+          font-size: 1.5rem;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__box {
+      cursor: pointer;
+      width: 380px;
+      padding: 60px 40px;
+      background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+      color: #fff;
+      border-radius: 8px;
+      &__text {
+        > p {
+          margin-block: 20px;
+        }
+      }
+    }
+  }
+}

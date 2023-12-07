@@ -61,7 +61,8 @@ li {
 .btn {
   padding: 8px 30px;
   cursor: pointer;
-  background-color: purple;
+  background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+
   color: #fff;
   font-weight: bold;
   @include breakpoint(sm) {
