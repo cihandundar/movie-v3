@@ -31,7 +31,7 @@ const PlansCard = () => {
           {plans.map((plan, index) => (
             <div className="card__container__box" key={index}>
               <div className="card__container__box__title">
-                <h2>{plan.title}</h2>
+                <h3>{plan.title}</h3>
               </div>
               <div className="card__container__box__text">
                 <p>{plan.description}</p>

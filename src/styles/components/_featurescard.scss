@@ -1,10 +1,9 @@
-.card {
+.features {
   margin-top: 50px;
   margin-bottom: 50px;
   &__container {
     max-width: 1200px;
     margin: 0 auto;
-
     &__title {
       > h1 {
         text-align: center;
@@ -18,25 +17,22 @@
         }
       }
     }
-
     &__wrapper {
       display: flex;
-      align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
     }
-    &__box {
-      cursor: pointer;
-      width: 390px;
-      padding: 60px 40px;
-      background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
-      color: #fff;
-      border-radius: 8px;
-      &__text {
-        > p {
-          margin-block: 20px;
-        }
-      }
+  }
+  &__box {
+    cursor: pointer;
+    width: 290px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    color: #fff;
+    border-radius: 8px;
+    padding: 30px 40px;
+    > p {
+      margin-top: 10px;
+      font-size: 0.9rem;
     }
   }
 }

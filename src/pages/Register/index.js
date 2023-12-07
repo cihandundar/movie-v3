@@ -5,6 +5,7 @@ import { reset, register } from "../../features/auth/authSlice";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { Accordion, FeaturesCard, Footer, PlansCard } from "components";
 const Register = () => {
   const isLoading = useSelector((state) => state?.post?.isLoading);
   const navigate = useNavigate();
@@ -124,6 +125,10 @@ const Register = () => {
           </div>
         </div>
       )}
+      <PlansCard />
+      <Accordion />
+      <FeaturesCard />
+      <Footer />
     </section>
   );
 };

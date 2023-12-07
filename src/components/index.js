@@ -4,4 +4,15 @@ import MovieItem from "./MovieItem";
 import Hero from "./Hero";
 import Footer from "./Footer";
 import PlansCard from "./PlansCard";
-export { Header, Slider, MovieItem, Hero, Footer, PlansCard };
+import FeaturesCard from "./FeaturesCard";
+import Accordion from "./Accordion";
+export {
+  Header,
+  Slider,
+  MovieItem,
+  Hero,
+  Footer,
+  PlansCard,
+  FeaturesCard,
+  Accordion,
+};
