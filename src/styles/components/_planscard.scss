@@ -24,6 +24,9 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      @include breakpoint(lg) {
+        justify-content: center;
+      }
     }
     &__box {
       cursor: pointer;
@@ -32,6 +35,9 @@
       background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
       color: #fff;
       border-radius: 8px;
+      @include breakpoint(xs) {
+        margin-top: 10px;
+      }
       &__text {
         > p {
           margin-block: 20px;
