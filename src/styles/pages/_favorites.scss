@@ -23,6 +23,9 @@
     flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
+    @include breakpoint(xs) {
+      height: 100%;
+    }
   }
   &__card {
     padding: 10px;
