@@ -4,4 +4,5 @@ import Register from "./Register";
 import Movie from "./Movie";
 import MovieDetails from "./MovieDetails";
 import Favorites from "./Favorites";
-export { Home, Login, Register, Movie, MovieDetails, Favorites };
+import NotFoundError from "./NotFoundError";
+export { Home, Login, Register, Movie, MovieDetails, Favorites, NotFoundError };

@@ -1,5 +1,13 @@
 import { Header } from "components";
-import { Favorites, Home, Login, Movie, MovieDetails, Register } from "pages";
+import {
+  Favorites,
+  Home,
+  Login,
+  Movie,
+  MovieDetails,
+  NotFoundError,
+  Register,
+} from "pages";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -16,6 +24,7 @@ function App() {
         <Route path="/movie" element={<Movie />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
+        <Route path="*" element={<NotFoundError />} />
       </Routes>
     </BrowserRouter>
   );
