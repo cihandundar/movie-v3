@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { login, reset } from "../../features/auth/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
+import { PlansCard } from "components";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -97,6 +98,7 @@ const Login = () => {
           </div>
         </div>
       )}
+      <PlansCard />
     </section>
   );
 };
