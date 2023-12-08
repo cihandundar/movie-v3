@@ -1,5 +1,17 @@
 .register {
   margin-top: 50px;
+  &__background {
+    > img {
+      position: absolute;
+      width: 100%;
+      z-index: -3;
+      top: 0;
+      opacity: 0.3;
+      @include breakpoint(sm) {
+        display: none;
+      }
+    }
+  }
   &__container {
     max-width: 1200px;
     margin: 0 auto;

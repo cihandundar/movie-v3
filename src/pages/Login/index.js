@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo1 from "../../assets/images/logo1.jpg";
-// import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/logo.jpg";
 import { useNavigate } from "react-router-dom";
 import { login, reset } from "../../features/auth/authSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -54,6 +54,9 @@ const Login = () => {
 
   return (
     <section className="register">
+      <div className="register__background">
+        <img src={Logo} alt="" />
+      </div>
       {isLoading ? (
         <p className="loading">Loading...</p>
       ) : (

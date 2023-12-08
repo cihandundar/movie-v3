@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/logo.jpg";
 import Logo1 from "../../assets/images/logo1.jpg";
 import { reset, register } from "../../features/auth/authSlice";
 import { toast } from "react-toastify";
@@ -60,6 +60,9 @@ const Register = () => {
 
   return (
     <section className="register">
+      <div className="register__background">
+        <img src={Logo} alt="" />
+      </div>
       {isLoading ? (
         <p className="loading">Loading...</p>
       ) : (
