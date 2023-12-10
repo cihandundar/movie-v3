@@ -32,7 +32,10 @@ const Hero = () => {
           </div>
           <div className="hero__btn">
             <button>
-              <a href="https://filmmax.org/recep-ivedik/" target="_blank">
+              <a
+                href="https://www.youtube.com/watch?v=rJJBnxhTT_A"
+                target="_blank"
+              >
                 Watch
               </a>
             </button>
