@@ -40,7 +40,10 @@
     }
     &__title {
       h3 {
-        margin-top: px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
         font-size: 1rem;
       }
     }
